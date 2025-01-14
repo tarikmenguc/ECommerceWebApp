@@ -1,4 +1,23 @@
 ﻿@page
-@model ECommerceWebApp.Pages.Order.ConfirmationModel
+@model ECommerceWebApp.Pages.Order.Pages_Order_Confirmation
 @{
+    ViewData["Title"] = "Order Confirmation";
 }
+
+<div class="order-confirmation-wrapper">
+    <div class="order-confirmation">
+        <!-- Success Icon -->
+        <div class="icon-success">
+            <i class="bi bi-check-circle-fill"></i> <!-- Bootstrap ikon sınıfı -->
+        </div>
+
+        <!-- Confirmation Message -->
+        <h1>Thank You for Your Order!</h1>
+        <p>Your order has been successfully placed.</p>
+        <p><strong>Order ID:</strong> 12345</p>
+        <p><strong>Estimated Delivery:</strong> January 20, 2025</p>
+
+        <!-- Back to Home Button -->
+        <a href="/" class="btn btn-primary">Back to Home</a>
+    </div>
+</div>

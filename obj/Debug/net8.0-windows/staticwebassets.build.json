@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kq8wYyzuZHwTetcH5egTKnYUKljvPGHCsE6CU71OEMM=",
+  "Hash": "7+QzIgCCTMIKXg6FCJNWviJyQZenki25g+UE4GE4TAY=",
   "Source": "ECommerceWebApp",
   "BasePath": "_content/ECommerceWebApp",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "drymq0cu5r",
-      "Integrity": "hwwkCsPvm6/VUCBCO0N6qNTfZe4Jz1213pLzVw8cwhU=",
+      "Fingerprint": "sqavsb4woz",
+      "Integrity": "3M8etM29ttbi8/th67E9TS0O72bxAtiy9GPMsPad4oQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -204,6 +204,132 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\13.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\M.Tarık MENGÜÇ\\source\\repos\\ECommerceWebApp\\ECommerceWebApp\\wwwroot\\images\\14.jpg",
+      "SourceId": "ECommerceWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\M.Tarık MENGÜÇ\\source\\repos\\ECommerceWebApp\\ECommerceWebApp\\wwwroot\\",
+      "BasePath": "_content/ECommerceWebApp",
+      "RelativePath": "images/14#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "92k4ickdci",
+      "Integrity": "bz/1G7/aqSGc2I3CbTToqMZhCzMD8Bb8ULvT+LMOuv8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\14.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\M.Tarık MENGÜÇ\\source\\repos\\ECommerceWebApp\\ECommerceWebApp\\wwwroot\\images\\15.jpg",
+      "SourceId": "ECommerceWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\M.Tarık MENGÜÇ\\source\\repos\\ECommerceWebApp\\ECommerceWebApp\\wwwroot\\",
+      "BasePath": "_content/ECommerceWebApp",
+      "RelativePath": "images/15#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "53ft1n331q",
+      "Integrity": "X8FL0iOr8T3B0sPEnADixMI6rP99t2n+dqk7iLTN5aA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\15.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\M.Tarık MENGÜÇ\\source\\repos\\ECommerceWebApp\\ECommerceWebApp\\wwwroot\\images\\16.jpg",
+      "SourceId": "ECommerceWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\M.Tarık MENGÜÇ\\source\\repos\\ECommerceWebApp\\ECommerceWebApp\\wwwroot\\",
+      "BasePath": "_content/ECommerceWebApp",
+      "RelativePath": "images/16#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lqw7sgxlud",
+      "Integrity": "gzKkGDxhc7yTuOGP+8e1QwD0PecZ0OAlayqNemSUAsg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\16.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\M.Tarık MENGÜÇ\\source\\repos\\ECommerceWebApp\\ECommerceWebApp\\wwwroot\\images\\17.jpg",
+      "SourceId": "ECommerceWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\M.Tarık MENGÜÇ\\source\\repos\\ECommerceWebApp\\ECommerceWebApp\\wwwroot\\",
+      "BasePath": "_content/ECommerceWebApp",
+      "RelativePath": "images/17#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "33u8gwgdwf",
+      "Integrity": "seUEkXoBMSC7s9ifRdekYyV3Wa79DZtZ81s4pCp30sY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\17.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\M.Tarık MENGÜÇ\\source\\repos\\ECommerceWebApp\\ECommerceWebApp\\wwwroot\\images\\18.jpg",
+      "SourceId": "ECommerceWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\M.Tarık MENGÜÇ\\source\\repos\\ECommerceWebApp\\ECommerceWebApp\\wwwroot\\",
+      "BasePath": "_content/ECommerceWebApp",
+      "RelativePath": "images/18#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "p0q4brlnfz",
+      "Integrity": "R1zUU/CrDCq+lqIw4EhZFunA84UkIZrXZRFaupdUrTI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\18.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\M.Tarık MENGÜÇ\\source\\repos\\ECommerceWebApp\\ECommerceWebApp\\wwwroot\\images\\19.jpg",
+      "SourceId": "ECommerceWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\M.Tarık MENGÜÇ\\source\\repos\\ECommerceWebApp\\ECommerceWebApp\\wwwroot\\",
+      "BasePath": "_content/ECommerceWebApp",
+      "RelativePath": "images/19#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bimqpvy49i",
+      "Integrity": "c6lXQb1QQHAnvUVRi4axOigtNS08eGTCGHXf7aQUISU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\19.jpg"
     },
     {
       "Identity": "C:\\Users\\M.Tarık MENGÜÇ\\source\\repos\\ECommerceWebApp\\ECommerceWebApp\\wwwroot\\images\\2.jpg",
@@ -1604,7 +1730,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10060"
+          "Value": "21168"
         },
         {
           "Name": "Content-Type",
@@ -1612,11 +1738,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hwwkCsPvm6/VUCBCO0N6qNTfZe4Jz1213pLzVw8cwhU=\""
+          "Value": "\"3M8etM29ttbi8/th67E9TS0O72bxAtiy9GPMsPad4oQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 03:39:52 GMT"
+          "Value": "Tue, 14 Jan 2025 19:47:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1626,12 +1752,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hwwkCsPvm6/VUCBCO0N6qNTfZe4Jz1213pLzVw8cwhU="
+          "Value": "sha256-3M8etM29ttbi8/th67E9TS0O72bxAtiy9GPMsPad4oQ="
         }
       ]
     },
     {
-      "Route": "css/site.drymq0cu5r.css",
+      "Route": "css/site.sqavsb4woz.css",
       "AssetFile": "C:\\Users\\M.Tarık MENGÜÇ\\source\\repos\\ECommerceWebApp\\ECommerceWebApp\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1641,7 +1767,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10060"
+          "Value": "21168"
         },
         {
           "Name": "Content-Type",
@@ -1649,11 +1775,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hwwkCsPvm6/VUCBCO0N6qNTfZe4Jz1213pLzVw8cwhU=\""
+          "Value": "\"3M8etM29ttbi8/th67E9TS0O72bxAtiy9GPMsPad4oQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 03:39:52 GMT"
+          "Value": "Tue, 14 Jan 2025 19:47:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1663,7 +1789,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "drymq0cu5r"
+          "Value": "sqavsb4woz"
         },
         {
           "Name": "label",
@@ -1671,7 +1797,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-hwwkCsPvm6/VUCBCO0N6qNTfZe4Jz1213pLzVw8cwhU="
+          "Value": "sha256-3M8etM29ttbi8/th67E9TS0O72bxAtiy9GPMsPad4oQ="
         }
       ]
     },
@@ -2297,6 +2423,498 @@
     {
       "Route": "images/13.jpg",
       "AssetFile": "C:\\Users\\M.Tarık MENGÜÇ\\source\\repos\\ECommerceWebApp\\ECommerceWebApp\\wwwroot\\images\\13.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3570653"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"c6lXQb1QQHAnvUVRi4axOigtNS08eGTCGHXf7aQUISU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 00:58:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-c6lXQb1QQHAnvUVRi4axOigtNS08eGTCGHXf7aQUISU="
+        }
+      ]
+    },
+    {
+      "Route": "images/14.92k4ickdci.jpg",
+      "AssetFile": "C:\\Users\\M.Tarık MENGÜÇ\\source\\repos\\ECommerceWebApp\\ECommerceWebApp\\wwwroot\\images\\14.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3962352"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bz/1G7/aqSGc2I3CbTToqMZhCzMD8Bb8ULvT+LMOuv8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 19:26:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "92k4ickdci"
+        },
+        {
+          "Name": "label",
+          "Value": "images/14.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bz/1G7/aqSGc2I3CbTToqMZhCzMD8Bb8ULvT+LMOuv8="
+        }
+      ]
+    },
+    {
+      "Route": "images/14.jpg",
+      "AssetFile": "C:\\Users\\M.Tarık MENGÜÇ\\source\\repos\\ECommerceWebApp\\ECommerceWebApp\\wwwroot\\images\\14.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3962352"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bz/1G7/aqSGc2I3CbTToqMZhCzMD8Bb8ULvT+LMOuv8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 19:26:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bz/1G7/aqSGc2I3CbTToqMZhCzMD8Bb8ULvT+LMOuv8="
+        }
+      ]
+    },
+    {
+      "Route": "images/15.53ft1n331q.jpg",
+      "AssetFile": "C:\\Users\\M.Tarık MENGÜÇ\\source\\repos\\ECommerceWebApp\\ECommerceWebApp\\wwwroot\\images\\15.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1811427"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"X8FL0iOr8T3B0sPEnADixMI6rP99t2n+dqk7iLTN5aA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 03:21:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "53ft1n331q"
+        },
+        {
+          "Name": "label",
+          "Value": "images/15.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-X8FL0iOr8T3B0sPEnADixMI6rP99t2n+dqk7iLTN5aA="
+        }
+      ]
+    },
+    {
+      "Route": "images/15.jpg",
+      "AssetFile": "C:\\Users\\M.Tarık MENGÜÇ\\source\\repos\\ECommerceWebApp\\ECommerceWebApp\\wwwroot\\images\\15.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1811427"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"X8FL0iOr8T3B0sPEnADixMI6rP99t2n+dqk7iLTN5aA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 03:21:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-X8FL0iOr8T3B0sPEnADixMI6rP99t2n+dqk7iLTN5aA="
+        }
+      ]
+    },
+    {
+      "Route": "images/16.jpg",
+      "AssetFile": "C:\\Users\\M.Tarık MENGÜÇ\\source\\repos\\ECommerceWebApp\\ECommerceWebApp\\wwwroot\\images\\16.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "460364"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gzKkGDxhc7yTuOGP+8e1QwD0PecZ0OAlayqNemSUAsg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 19:49:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gzKkGDxhc7yTuOGP+8e1QwD0PecZ0OAlayqNemSUAsg="
+        }
+      ]
+    },
+    {
+      "Route": "images/16.lqw7sgxlud.jpg",
+      "AssetFile": "C:\\Users\\M.Tarık MENGÜÇ\\source\\repos\\ECommerceWebApp\\ECommerceWebApp\\wwwroot\\images\\16.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "460364"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gzKkGDxhc7yTuOGP+8e1QwD0PecZ0OAlayqNemSUAsg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 19:49:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lqw7sgxlud"
+        },
+        {
+          "Name": "label",
+          "Value": "images/16.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gzKkGDxhc7yTuOGP+8e1QwD0PecZ0OAlayqNemSUAsg="
+        }
+      ]
+    },
+    {
+      "Route": "images/17.33u8gwgdwf.jpg",
+      "AssetFile": "C:\\Users\\M.Tarık MENGÜÇ\\source\\repos\\ECommerceWebApp\\ECommerceWebApp\\wwwroot\\images\\17.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2415076"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"seUEkXoBMSC7s9ifRdekYyV3Wa79DZtZ81s4pCp30sY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 19:49:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "33u8gwgdwf"
+        },
+        {
+          "Name": "label",
+          "Value": "images/17.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-seUEkXoBMSC7s9ifRdekYyV3Wa79DZtZ81s4pCp30sY="
+        }
+      ]
+    },
+    {
+      "Route": "images/17.jpg",
+      "AssetFile": "C:\\Users\\M.Tarık MENGÜÇ\\source\\repos\\ECommerceWebApp\\ECommerceWebApp\\wwwroot\\images\\17.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2415076"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"seUEkXoBMSC7s9ifRdekYyV3Wa79DZtZ81s4pCp30sY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 19:49:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-seUEkXoBMSC7s9ifRdekYyV3Wa79DZtZ81s4pCp30sY="
+        }
+      ]
+    },
+    {
+      "Route": "images/18.jpg",
+      "AssetFile": "C:\\Users\\M.Tarık MENGÜÇ\\source\\repos\\ECommerceWebApp\\ECommerceWebApp\\wwwroot\\images\\18.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7571173"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R1zUU/CrDCq+lqIw4EhZFunA84UkIZrXZRFaupdUrTI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 19:50:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-R1zUU/CrDCq+lqIw4EhZFunA84UkIZrXZRFaupdUrTI="
+        }
+      ]
+    },
+    {
+      "Route": "images/18.p0q4brlnfz.jpg",
+      "AssetFile": "C:\\Users\\M.Tarık MENGÜÇ\\source\\repos\\ECommerceWebApp\\ECommerceWebApp\\wwwroot\\images\\18.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7571173"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R1zUU/CrDCq+lqIw4EhZFunA84UkIZrXZRFaupdUrTI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 19:50:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p0q4brlnfz"
+        },
+        {
+          "Name": "label",
+          "Value": "images/18.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-R1zUU/CrDCq+lqIw4EhZFunA84UkIZrXZRFaupdUrTI="
+        }
+      ]
+    },
+    {
+      "Route": "images/19.bimqpvy49i.jpg",
+      "AssetFile": "C:\\Users\\M.Tarık MENGÜÇ\\source\\repos\\ECommerceWebApp\\ECommerceWebApp\\wwwroot\\images\\19.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3570653"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"c6lXQb1QQHAnvUVRi4axOigtNS08eGTCGHXf7aQUISU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 00:58:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bimqpvy49i"
+        },
+        {
+          "Name": "label",
+          "Value": "images/19.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-c6lXQb1QQHAnvUVRi4axOigtNS08eGTCGHXf7aQUISU="
+        }
+      ]
+    },
+    {
+      "Route": "images/19.jpg",
+      "AssetFile": "C:\\Users\\M.Tarık MENGÜÇ\\source\\repos\\ECommerceWebApp\\ECommerceWebApp\\wwwroot\\images\\19.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {

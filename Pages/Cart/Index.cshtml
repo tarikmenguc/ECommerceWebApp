@@ -1,4 +1,54 @@
 ﻿@page
-@model ECommerceWebApp.Pages.Cart.IndexModel
+@model ECommerceWebApp.Pages.Cart.Pages_Cart_Index
 @{
+    ViewData["Title"] = "Shopping Cart";
 }
+
+<div class="container cart-container">
+    <!-- Cart Header -->
+    <div class="cart-header">
+        <h1>Your Shopping Cart</h1>
+        <p>Review your selected items and proceed to checkout.</p>
+    </div>
+
+    <!-- Cart Items -->
+    <div class="cart-items">
+        <!-- Item 1 -->
+        <div class="cart-item">
+            <img src="/images/12.jpg" alt="Product 1">
+            <div class="cart-item-details">
+                <h5>Product 1</h5>
+                <p>Price: $50.00</p>
+                <p>Quantity: 2</p>
+            </div>
+            <div class="cart-item-actions">
+                <button class="btn btn-remove">Remove</button>
+                <button class="btn btn-update">Update</button>
+            </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="cart-item">
+            <img src="/images/7.jpg" alt="Product 2">
+            <div class="cart-item-details">
+                <h5>Product 2</h5>
+                <p>Price: $75.00</p>
+                <p>Quantity: 1</p>
+            </div>
+            <div class="cart-item-actions">
+                <button class="btn btn-remove">Remove</button>
+                <button class="btn btn-update">Update</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Total -->
+    <div class="cart-total">
+        Total: $175.00
+    </div>
+
+    <!-- Checkout Button -->
+    <div class="cart-checkout">
+        <a href="/Cart/Checkout" class="btn btn-primary">Proceed to Checkout</a>
+    </div>
+</div>

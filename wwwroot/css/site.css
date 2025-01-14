@@ -393,3 +393,537 @@ body {
     transform: scale(1.1);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
+/* Order Details Section */
+.order-details {
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+    .order-details h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #333;
+    }
+
+    .order-details p {
+        font-size: 1rem;
+        margin: 10px 0;
+        color: #555;
+    }
+
+    .order-details .status {
+        font-weight: bold;
+    }
+
+        .order-details .status.delivered {
+            color: #28a745; /* Yeþil */
+        }
+
+        .order-details .status.shipped {
+            color: #ffc107; /* Sarý */
+        }
+
+        .order-details .status.pending {
+            color: #007bff; /* Mavi */
+        }
+
+/* Back to Orders Button */
+.btn-primary {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+    .btn-primary:hover {
+        background-color: #444;
+    }
+
+/* Order Confirmation Section */
+.order-confirmation {
+    padding: 60px 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Yarý saydam arka plan */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    position: relative;
+    z-index: 10;
+}
+
+    .order-confirmation h1 {
+        font-size: 2.5rem;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .order-confirmation p {
+        font-size: 1.2rem;
+        color: #555;
+        margin-bottom: 10px;
+    }
+
+    .order-confirmation .btn-primary {
+        margin-top: 20px;
+    }
+
+    .order-confirmation .icon-success {
+        font-size: 4rem;
+        color: #28a745; /* Yeþil */
+        margin-bottom: 20px;
+    }
+
+/* Arka Plan Resmi */
+.order-confirmation-wrapper {
+    background: url('/images/14.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Hafif Animasyon */
+.order-confirmation .icon-success {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* Genel Cart Sayfasý Düzenlemeleri */
+.cart-container {
+    padding: 60px 20px;
+}
+
+.cart-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+    .cart-header h1 {
+        font-size: 2.5rem;
+        color: #000; /* Modern ve lüks görünüm için siyah */
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    .cart-header p {
+        font-size: 1.2rem;
+        color: #666; /* Hafif gri yazý */
+    }
+
+/* Cart Items */
+.cart-items {
+    margin-bottom: 30px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fdfdfd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .cart-item:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Cart Item Image */
+    .cart-item img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+        .cart-item img:hover {
+            transform: scale(1.05);
+        }
+
+/* Cart Item Details */
+.cart-item-details {
+    flex: 1;
+    margin-left: 20px;
+}
+
+    .cart-item-details h5 {
+        font-size: 1.5rem;
+        color: #000;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .cart-item-details p {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 5px;
+    }
+
+/* Remove ve Update Düðmeleri */
+.cart-item-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Daha fazla boþluk */
+}
+
+    .cart-item-actions .btn-remove {
+        background-color: transparent;
+        border: 2px solid #d9534f; /* Ýnce kýrmýzý kenarlýk */
+        color: #d9534f;
+        padding: 8px 20px;
+        font-size: 1rem;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+        .cart-item-actions .btn-remove:hover {
+            background-color: #d9534f;
+            color: #fff;
+            border-color: #d9534f;
+        }
+
+    .cart-item-actions .btn-update {
+        background-color: transparent;
+        border: 2px solid #007bff; /* Ýnce mavi kenarlýk */
+        color: #007bff;
+        padding: 8px 20px;
+        font-size: 1rem;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+        .cart-item-actions .btn-update:hover {
+            background-color: #007bff;
+            color: #fff;
+            border-color: #007bff;
+        }
+
+/* Total Price */
+.cart-total {
+    text-align: right;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000; /* Siyah yazý */
+}
+
+/* Checkout Button */
+.cart-checkout {
+    text-align: right;
+    margin-top: 20px;
+}
+
+    .cart-checkout .btn-primary {
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        border-radius: 50px;
+        background: linear-gradient(90deg, #000, #444); /* Þýk bir degrade */
+        color: #fff;
+        border: none;
+        transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+        .cart-checkout .btn-primary:hover {
+            background: linear-gradient(90deg, #444, #000);
+            transform: scale(1.05);
+        }
+
+
+/* Genel Ayarlar */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.login-card {
+    display: flex;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+}
+
+    .login-card .login-form,
+    .login-card .create-account {
+        flex: 1;
+        padding: 40px;
+    }
+
+    .login-card .login-form {
+        border-right: 1px solid #ddd;
+    }
+
+    .login-card h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        color: #000;
+        font-weight: bold;
+    }
+
+    .login-card p {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+        color: #666;
+    }
+
+    /* Input Fields */
+    .login-card input[type="email"],
+    .login-card input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        background: #f9f9f9;
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+        transition: border-color 0.3s;
+    }
+
+        .login-card input[type="email"]:focus,
+        .login-card input[type="password"]:focus {
+            border-color: #000;
+            outline: none;
+        }
+
+    /* Buttons */
+    .login-card .btn-primary {
+        background: #000;
+        color: #fff;
+        border: none;
+        padding: 12px 20px;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.3s ease;
+        width: 100%;
+        text-transform: uppercase;
+    }
+
+        .login-card .btn-primary:hover {
+            background: #444;
+            transform: scale(1.02);
+        }
+
+    .login-card .btn-secondary {
+        background: transparent;
+        border: 2px solid #000;
+        color: #000;
+        padding: 10px 20px;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        text-transform: uppercase;
+        transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+        .login-card .btn-secondary:hover {
+            background: #000;
+            color: #fff;
+            transform: scale(1.02);
+        }
+
+    /* Links */
+    .login-card a {
+        text-decoration: none;
+        color: #007bff;
+        font-size: 0.9rem;
+        transition: color 0.3s ease;
+    }
+
+        .login-card a:hover {
+            color: #0056b3;
+        }
+
+/* Create Account Section */
+.create-account ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.create-account li {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+    .create-account li i {
+        font-size: 1.2rem;
+        color: #000;
+    }
+
+
+/* Register Page Styling */
+.register-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.register-form {
+    flex: 1;
+    max-width: 60%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+    .register-form h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: #000;
+    }
+
+    .register-form p {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+        color: #555;
+    }
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 0.95rem;
+    width: 100%;
+}
+
+    .form-control:focus {
+        border-color: #000;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        outline: none;
+    }
+
+.register-form .form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.register-form .form-check-label {
+    margin-left: 5px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.register-button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+    .register-button:hover {
+        background-color: #444;
+    }
+
+.register-info {
+    flex: 1;
+    max-width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .register-info img {
+        border-radius: 10px;
+        max-width: 100%;
+        height:900px;
+        object-fit: cover;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+/* Dropdown Styling */
+.select-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+    .select-group select {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 0.95rem;
+        flex: 1;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .select-group select:focus {
+            border-color: #000;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            outline: none;
+        }
