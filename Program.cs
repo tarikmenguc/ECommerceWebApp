@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using SellerAutomationSystem.Data; // DbContext için
 
@@ -29,16 +30,18 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthorization(); // Eðer kimlik doðrulama kullanýyorsanýz bu satýr kalsýn
+// Eðer kimlik doðrulama kullanýyorsanýz bu satýr kalsýn
 
 
 
 // Razor Pages rotalarý
+
 app.MapRazorPages();
-app.UseEndpoints(endpoints =>
+
+app.MapGet("/", context =>
 {
-    // Varsayýlan olarak Home/Index'e yönlendir
-    endpoints.MapFallbackToPage("/Home/Index");
+    context.Response.Redirect("/Home/Index");
+    return Task.CompletedTask;
 });
 
 app.Run();

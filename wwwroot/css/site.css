@@ -1,22 +1,395 @@
-html {
-  font-size: 14px;
-}
+/* Google Fonts: Playfair Display */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
+/* Genel Stil Ayarlarý */
 body {
-  margin-bottom: 60px;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Stil Ayarlarý */
+.navbar {
+    background-color: transparent;
+    font-family: 'Playfair Display', serif;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+    .navbar:hover {
+        background-color: #fff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar .nav-link {
+        font-size: 1.1rem;
+        color: #000;
+        font-weight: 500;
+        margin-right: 20px;
+        text-transform: uppercase;
+        transition: color 0.3s ease;
+    }
+
+        .navbar .nav-link:hover {
+            color: #ff4081;
+        }
+
+    .navbar .navbar-brand {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #000;
+        transition: color 0.3s ease;
+    }
+
+        .navbar .navbar-brand:hover {
+            color: #ff4081;
+        }
+
+/* Navbar Toggler Icon Stil Ayarlarý */
+.navbar-toggler {
+    border: none;
+}
+
+    .navbar-toggler:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Hero Section Stil Ayarlarý */
+.hero-section {
+    background: url('/images/7.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+    .hero-section h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    .hero-section p {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    .hero-section .btn-primary {
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        border-radius: 30px;
+    }
+
+/* Products Section Stil Ayarlarý */
+.home-product-section .home-product-card .btn-primary {
+    background-color: #000; /* Siyah arka plan */
+    color: #fff; /* Beyaz yazý */
+    border-radius: 50px; /* Yuvarlak kenarlar */
+    height: 50px; /* Resim yüksekliðini sabitle */
+    width: 100%; /* Kartýn geniþliðini kaplasýn */
+    object-fit: cover; /* Resmi düzgün þekilde kýrp */
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid #000; /* Siyah kenarlýk */
+    transition: all 0.3s ease-in-out;
+}
+
+    .home-product-section .home-product-card .btn-primary:hover {
+        background-color: #fff; /* Beyaz arka plan */
+        color: #000; /* Siyah yazý */
+        border: 2px solid #000; /* Siyah kenarlýk */
+        transform: scale(1.05); /* Hafif büyüme efekti */
+    }
+.home-product-section .home-product-card img {
+    height: 600px; /* Tüm resimler için sabit yükseklik */
+    width: 100%; /* Kartýn geniþliðini kaplayacak þekilde ayarla */
+    object-fit: cover; /* Resmin düzgün görünmesini saðla */
+    border-radius: 10px; /* Resimlere hafif yuvarlak kenarlar (isteðe baðlý) */
+}
+
+/* Call to Action (CTA) Section Stil Ayarlarý */
+.cta-section {
+    background: url('/images/9.jpg') no-repeat center center/cover; /* Arka planda zarif bir resim */
+    color: #fff; /* Siyah yazýlar */
+    padding: 60px 0;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif; /* Zarif bir font */
+}
+
+    .cta-section h2 {
+        font-size: 2rem;
+        font-weight: normal;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+    }
+
+    .cta-section p {
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+    }
+
+    .cta-section .btn-primary {
+        padding: 12px 30px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        border-radius: 50px;
+        background-color: #fff; /* Siyah buton */
+        color: #fff; /* Beyaz yazýlar */
+        border: 2px solid #000;
+        transition: all 0.3s ease;
+    }
+
+        .cta-section .btn-primary:hover {
+            background-color: transparent;
+            color: #000;
+            border: 2px solid #000;
+            transform: scale(1.05); /* Hafif büyüme efekti */
+        }
+
+
+/* Product List Section */
+.product-list-section {
+    padding: 40px 20px;
+}
+
+    .product-list-section .product-controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .product-list-section .btn-filter {
+        background-color: #000;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .product-list-section .btn-filter:hover {
+            background-color: #444;
+        }
+
+    .product-list-section .sort-dropdown label {
+        margin-right: 10px;
+        font-weight: bold;
+    }
+
+    .product-list-section .sort-dropdown select {
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .product-list-section .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .product-list-section .product-card {
+        background-color: #fff;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+    }
+        .product-list-section .product-card img {
+            height: 300px; /* Resim yüksekliðini sabitle */
+            width: 100%; /* Kartýn geniþliðini kaplasýn */
+            object-fit: cover; /* Resmi düzgün þekilde kýrp */
+            border-radius: 10px; /* Hafif yuvarlak kenarlar */
+        }
+
+        .product-list-section .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+    .product-list-section .product-image img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .product-list-section .product-details {
+        padding: 10px;
+        text-align: center;
+    }
+
+        .product-list-section .product-details h5 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .product-list-section .product-details p {
+            font-size: 1rem;
+            color: #888;
+        }
+
+
+
+/* Filters Button Styling */
+.btn-filter {
+    background-color: #000; /* Siyah arka plan */
+    color: #fff; /* Beyaz yazý */
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out; /* Geçiþ efekti */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    .btn-filter:hover {
+        background-color: #444; /* Daha açýk siyah */
+        transform: scale(1.05); /* Hafif büyüme efekti */
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    }
+
+/* Filters and Sort Dropdown Styling */
+.sort-dropdown select {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+    .sort-dropdown select:hover {
+        border-color: #666;
+        background-color: #fff;
+    }
+
+    .sort-dropdown select:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+/* Filters Button Styling */
+.btn-filter {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .btn-filter:hover {
+        background-color: #444;
+    }
+
+
+/* Order History Section */
+.order-history {
+    padding: 60px 20px;
+}
+
+.order-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.order-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+    .order-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+.order-info h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.order-info p {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.status {
+    font-weight: bold;
+}
+
+    .status.delivered {
+        color: #28a745; /* Yeþil */
+    }
+
+    .status.shipped {
+        color: #ffc107; /* Sarý */
+    }
+
+    .status.pending {
+        color: #007bff; /* Mavi */
+    }
+
+.order-actions .btn-primary {
+    background-color: #000;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+    .order-actions .btn-primary:hover {
+        background-color: #444;
+        transform: scale(1.05);
+    }
+    .order-products {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    overflow-x: auto; /* Taþma durumunda yatay kaydýrma */
+    padding-bottom: 10px;
+}
+
+.order-products img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.order-products img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }

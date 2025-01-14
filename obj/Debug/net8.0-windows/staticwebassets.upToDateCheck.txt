@@ -1,6 +1,10 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\1.jpg
+wwwroot\images\10.jpg
+wwwroot\images\11.jpg
+wwwroot\images\12.jpg
+wwwroot\images\13.jpg
 wwwroot\images\2.jpg
 wwwroot\images\3.jpg
 wwwroot\images\4.jpg

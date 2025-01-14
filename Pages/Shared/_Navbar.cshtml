@@ -1,0 +1,62 @@
+﻿<!-- Pages/Shared/_Navbar.cshtml -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="/">Veloura</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <!-- Home -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/Home/Index">Home</a>
+                </li>
+
+                <!-- Cart -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="cartDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Cart
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="cartDropdown">
+                        <li><a class="dropdown-item" href="/Cart/Index">View Cart</a></li>
+                    </ul>
+                </li>
+
+                <!-- Order Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="orderDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Order
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="orderDropdown">
+                        <li><a class="dropdown-item" href="/Order/Index">Order List</a></li>
+                        <li><a class="dropdown-item" href="/Order/Details">Order Details</a></li>
+                        <li><a class="dropdown-item" href="/Order/Confirmation">Order Confirmation</a></li>
+                    </ul>
+                </li>
+
+                <!-- Product Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="productDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Product
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="productDropdown">
+                        <li><a class="dropdown-item" href="/Product/List">Product List</a></li>
+                       @*  <li><a class="dropdown-item" href="/Product/Details">Product Details</a></li> *@
+                    </ul>
+                </li>
+
+                <!-- Account Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Account
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="accountDropdown">
+                        <li><a class="dropdown-item" href="/Account/Login">Login</a></li>
+                        <li><a class="dropdown-item" href="/Account/Register">Register</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

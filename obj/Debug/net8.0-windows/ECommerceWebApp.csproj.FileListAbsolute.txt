@@ -179,3 +179,4 @@ C:\Users\M.Tarık MENGÜÇ\source\repos\ECommerceWebApp\ECommerceWebApp\obj\Debu
 C:\Users\M.Tarık MENGÜÇ\source\repos\ECommerceWebApp\ECommerceWebApp\obj\Debug\net8.0-windows\ECommerceWebApp.pdb
 C:\Users\M.Tarık MENGÜÇ\source\repos\ECommerceWebApp\ECommerceWebApp\obj\Debug\net8.0-windows\ECommerceWebApp.genruntimeconfig.cache
 C:\Users\M.Tarık MENGÜÇ\source\repos\ECommerceWebApp\ECommerceWebApp\obj\Debug\net8.0-windows\ref\ECommerceWebApp.dll
+C:\Users\M.Tarık MENGÜÇ\source\repos\ECommerceWebApp\ECommerceWebApp\obj\Debug\net8.0-windows\ECommerceWebApp.sourcelink.json
