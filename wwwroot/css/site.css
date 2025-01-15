@@ -167,83 +167,61 @@ body {
     padding: 40px 20px;
 }
 
-    .product-list-section .product-controls {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
-    .product-list-section .btn-filter {
-        background-color: #000;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
-
-        .product-list-section .btn-filter:hover {
-            background-color: #444;
-        }
-
-    .product-list-section .sort-dropdown label {
-        margin-right: 10px;
-        font-weight: bold;
-    }
-
-    .product-list-section .sort-dropdown select {
-        padding: 5px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-    }
-
     .product-list-section .product-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Esnek sütunlar */
+        gap: 20px; /* Kartlar arasýndaki boþluk */
+        justify-content: center;
+        align-items: stretch;
     }
 
     .product-list-section .product-card {
+        text-align: center;
         background-color: #fff;
         border: 1px solid #eee;
-        border-radius: 5px;
+        border-radius: 8px;
         overflow: hidden;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s;
     }
+
         .product-list-section .product-card img {
-            height: 300px; /* Resim yüksekliðini sabitle */
-            width: 100%; /* Kartýn geniþliðini kaplasýn */
-            object-fit: cover; /* Resmi düzgün þekilde kýrp */
-            border-radius: 10px; /* Hafif yuvarlak kenarlar */
+            width: 100%;
+            height: auto;
+            object-fit: cover; /* Resmin düzgün kýrpýlmasýný saðlar */
+            max-height: 300px;
+        }
+
+        .product-list-section .product-card h5 {
+            margin: 10px 0 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .product-list-section .product-card p {
+            font-size: 0.9rem;
+            color: #666;
         }
 
         .product-list-section .product-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-5px); /* Hover efekt */
         }
 
-    .product-list-section .product-image img {
-        width: 100%;
-        object-fit: cover;
-    }
-
-    .product-list-section .product-details {
-        padding: 10px;
-        text-align: center;
-    }
-
-        .product-list-section .product-details h5 {
-            font-size: 1.2rem;
-            margin-bottom: 5px;
+        .product-list-section .product-card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
         }
 
-        .product-list-section .product-details p {
-            font-size: 1rem;
-            color: #888;
-        }
-
+            .product-list-section .product-card a:hover {
+                background-color: #444;
+            }
 
 
 /* Filters Button Styling */
@@ -676,117 +654,80 @@ body {
     padding: 0;
 }
 
-/* Login Container */
+/* Login Page Styling */
 .login-container {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background: url('/images/login-bg.jpg') no-repeat center center/cover; /* Arka plan resmi */
     padding: 20px;
 }
 
-.login-card {
-    display: flex;
-    background: #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    max-width: 900px;
+.login-form-card {
+    background-color: rgba(255, 255, 255, 0.9); /* Yarý saydam beyaz arka plan */
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
     width: 100%;
+    text-align: center;
 }
 
-    .login-card .login-form,
-    .login-card .create-account {
-        flex: 1;
-        padding: 40px;
-    }
-
-    .login-card .login-form {
-        border-right: 1px solid #ddd;
-    }
-
-    .login-card h2 {
-        font-size: 1.5rem;
-        margin-bottom: 20px;
+    .login-form-card h2 {
+        font-size: 2rem;
         color: #000;
+        margin-bottom: 20px;
         font-weight: bold;
     }
 
-    .login-card p {
-        font-size: 0.9rem;
-        margin-bottom: 10px;
-        color: #666;
+    .login-form-card p {
+        font-size: 0.95rem;
+        color: #555;
+        margin-bottom: 30px;
     }
 
-    /* Input Fields */
-    .login-card input[type="email"],
-    .login-card input[type="password"] {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 20px;
+    .login-form-card .form-control {
         border: 1px solid #ddd;
         border-radius: 5px;
-        font-size: 0.9rem;
-        background: #f9f9f9;
-        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-        transition: border-color 0.3s;
+        padding: 10px;
+        font-size: 1rem;
+        margin-bottom: 20px;
+        background-color: #f9f9f9;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
     }
 
-        .login-card input[type="email"]:focus,
-        .login-card input[type="password"]:focus {
+        .login-form-card .form-control:focus {
             border-color: #000;
-            outline: none;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
         }
 
-    /* Buttons */
-    .login-card .btn-primary {
+    .login-form-card button {
         background: #000;
         color: #fff;
         border: none;
         padding: 12px 20px;
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-weight: bold;
         border-radius: 5px;
-        cursor: pointer;
-        transition: background 0.3s ease, transform 0.3s ease;
+        transition: background-color 0.3s ease, transform 0.3s ease;
         width: 100%;
-        text-transform: uppercase;
     }
 
-        .login-card .btn-primary:hover {
+        .login-form-card button:hover {
             background: #444;
             transform: scale(1.02);
         }
 
-    .login-card .btn-secondary {
-        background: transparent;
-        border: 2px solid #000;
-        color: #000;
-        padding: 10px 20px;
-        font-size: 1rem;
-        font-weight: bold;
-        border-radius: 5px;
-        cursor: pointer;
-        width: 100%;
-        text-transform: uppercase;
-        transition: background 0.3s ease, transform 0.3s ease;
-    }
-
-        .login-card .btn-secondary:hover {
-            background: #000;
-            color: #fff;
-            transform: scale(1.02);
-        }
-
-    /* Links */
-    .login-card a {
-        text-decoration: none;
-        color: #007bff;
+    .login-form-card a {
+        display: block;
+        margin-top: 15px;
         font-size: 0.9rem;
-        transition: color 0.3s ease;
+        color: #007bff;
+        text-decoration: none;
     }
 
-        .login-card a:hover {
+        .login-form-card a:hover {
             color: #0056b3;
         }
 
@@ -814,96 +755,70 @@ body {
 /* Register Page Styling */
 .register-container {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
     padding: 20px;
-    gap: 20px;
+    background-color: #f9f9f9; /* Arka plan rengi */
+}
+
+.register-card {
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
 }
 
 .register-form {
-    flex: 1;
-    max-width: 60%;
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    flex: 1 1 50%;
 }
 
-    .register-form h1 {
+    .register-form h2 {
         font-size: 2rem;
         margin-bottom: 20px;
+        font-weight: bold;
         color: #000;
     }
 
-    .register-form p {
-        font-size: 0.9rem;
+    .register-form .form-group {
         margin-bottom: 20px;
-        color: #555;
     }
 
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-control {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 0.95rem;
-    width: 100%;
-}
-
-    .form-control:focus {
-        border-color: #000;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        outline: none;
+    .register-form .form-control {
+        border: 1px solid #ddd;
+        padding: 10px;
+        font-size: 1rem;
+        border-radius: 5px;
+        background-color: #f9f9f9;
     }
 
-.register-form .form-check {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.register-form .form-check-label {
-    margin-left: 5px;
-    font-size: 0.9rem;
-    color: #555;
-}
-
-.register-button {
-    background-color: #000;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    width: 100%;
-}
-
-    .register-button:hover {
-        background-color: #444;
+    .register-form .btn-primary {
+        background: #000;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 5px;
+        width: 100%;
+        transition: background-color 0.3s ease;
     }
 
-.register-info {
-    flex: 1;
-    max-width: 35%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        .register-form .btn-primary:hover {
+            background: #444;
+        }
 
-    .register-info img {
-        border-radius: 10px;
-        max-width: 100%;
-        height:900px;
-        object-fit: cover;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
+/* Image Section */
+.register-image {
+    flex: 1 1 50%;
+    background: url('/images/21.jpg') no-repeat center center/cover;
+    min-height: 400px;
+}
 
 /* Dropdown Styling */
 .select-group {
@@ -927,3 +842,30 @@ body {
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
             outline: none;
         }
+
+.product-detail-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.product-description {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.product-price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000;
+}

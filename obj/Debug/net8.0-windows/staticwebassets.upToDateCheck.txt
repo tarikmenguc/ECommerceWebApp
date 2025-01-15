@@ -12,6 +12,9 @@ wwwroot\images\17.jpg
 wwwroot\images\18.jpg
 wwwroot\images\19.jpg
 wwwroot\images\2.jpg
+wwwroot\images\20.jpg
+wwwroot\images\21.jpg
+wwwroot\images\22.jpg
 wwwroot\images\3.jpg
 wwwroot\images\4.jpg
 wwwroot\images\5.jpg

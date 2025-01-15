@@ -1,4 +1,32 @@
-﻿@page "/Products/Details/{id:int}"
+﻿@page "/Product/Details/{id:int}"
 @model ECommerceWebApp.Pages.Product.DetailsModel
 @{
+    ViewData["Title"] = "Product Details";
 }
+
+<div class="container py-5">
+    <div class="row">
+        <!-- Ürün Görseli -->
+        <div class="col-md-6">
+            <img src="@Model.Product.ImageUrl" alt="@Model.Product.Name" class="img-fluid product-detail-image rounded shadow-sm" />
+        </div>
+
+        <!-- Ürün Detayları -->
+        <div class="col-md-6">
+            <h1 class="product-title">@Model.Product.Name</h1>
+            <p class="text-muted">Category: @Model.Product.Category.CategoryName</p>
+            <p class="product-description">@Model.Product.Description</p>
+            <h3 class="product-price">$@Model.Product.Price</h3>
+
+            <form method="post" asp-page="/Cart/Index">
+                <input type="hidden" name="ProductId" value="@Model.Product.Id" />
+                <div class="form-group">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" name="Quantity" id="quantity" value="1" min="1" class="form-control" />
+                </div>
+                <button type="submit" class="btn btn-primary">Add to Cart</button>
+            </form>
+
+        </div>
+    </div>
+</div>

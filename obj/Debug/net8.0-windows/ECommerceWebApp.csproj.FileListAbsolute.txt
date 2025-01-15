@@ -160,6 +160,7 @@ C:\Users\M.Tarık MENGÜÇ\source\repos\ECommerceWebApp\ECommerceWebApp\obj\Debu
 C:\Users\M.Tarık MENGÜÇ\source\repos\ECommerceWebApp\ECommerceWebApp\obj\Debug\net8.0-windows\ECommerceWebApp.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\M.Tarık MENGÜÇ\source\repos\ECommerceWebApp\ECommerceWebApp\obj\Debug\net8.0-windows\ECommerceWebApp.RazorAssemblyInfo.cache
 C:\Users\M.Tarık MENGÜÇ\source\repos\ECommerceWebApp\ECommerceWebApp\obj\Debug\net8.0-windows\ECommerceWebApp.RazorAssemblyInfo.cs
+C:\Users\M.Tarık MENGÜÇ\source\repos\ECommerceWebApp\ECommerceWebApp\obj\Debug\net8.0-windows\ECommerceWebApp.sourcelink.json
 C:\Users\M.Tarık MENGÜÇ\source\repos\ECommerceWebApp\ECommerceWebApp\obj\Debug\net8.0-windows\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\M.Tarık MENGÜÇ\source\repos\ECommerceWebApp\ECommerceWebApp\obj\Debug\net8.0-windows\scopedcss\bundle\ECommerceWebApp.styles.css
 C:\Users\M.Tarık MENGÜÇ\source\repos\ECommerceWebApp\ECommerceWebApp\obj\Debug\net8.0-windows\scopedcss\projectbundle\ECommerceWebApp.bundle.scp.css
@@ -179,4 +180,3 @@ C:\Users\M.Tarık MENGÜÇ\source\repos\ECommerceWebApp\ECommerceWebApp\obj\Debu
 C:\Users\M.Tarık MENGÜÇ\source\repos\ECommerceWebApp\ECommerceWebApp\obj\Debug\net8.0-windows\ECommerceWebApp.pdb
 C:\Users\M.Tarık MENGÜÇ\source\repos\ECommerceWebApp\ECommerceWebApp\obj\Debug\net8.0-windows\ECommerceWebApp.genruntimeconfig.cache
 C:\Users\M.Tarık MENGÜÇ\source\repos\ECommerceWebApp\ECommerceWebApp\obj\Debug\net8.0-windows\ref\ECommerceWebApp.dll
-C:\Users\M.Tarık MENGÜÇ\source\repos\ECommerceWebApp\ECommerceWebApp\obj\Debug\net8.0-windows\ECommerceWebApp.sourcelink.json

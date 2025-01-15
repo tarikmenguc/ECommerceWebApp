@@ -1,62 +1,28 @@
 ﻿@page
-@model ECommerceWebApp.Pages.Product.Pages_Product_List
+@model ECommerceWebApp.Pages.Product.ListModel
 @{
     ViewData["Title"] = "Product List";
 }
 
 <section class="product-list-section">
     <div class="container">
-        <!-- Filters and Sort -->
-        <div class="product-controls d-flex justify-content-between align-items-center mb-4">
-            <!-- Filters Button -->
-            <button class="btn-filter d-flex align-items-center">
-                <span class="material-icons" style="margin-right: 8px;">filter_alt</span>
-                Filters
-            </button>
-
-            <!-- Sort Dropdown -->
-            <div class="sort-dropdown d-flex align-items-center">
-                <label for="sortBy" class="me-2 fw-bold">Sort By:</label>
-                <select id="sortBy">
-                    <option value="newest">Newest</option>
-                    <option value="priceLowHigh">Price: Low to High</option>
-                    <option value="priceHighLow">Price: High to Low</option>
-                </select>
-            </div>
-        </div>
-
         <!-- Product Grid -->
         <div class="product-grid">
-            <!-- Product Item -->
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="/images/9.jpg" alt="Product 1">
+            @foreach (var product in Model.Products)
+            {
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="@product.ImageUrl" alt="@product.Name">
+                    </div>
+                    <div class="product-details">
+                        <h5>@product.Name</h5>
+                        <p>@product.Category?.CategoryName ?? "No Category"</p>
+                        <p>@product.Brand?.Name ?? "No Brand"</p>
+                        <p>$@product.Price</p>
+                        <a href="/Product/Details/@product.Id">View Details</a>
+                    </div>
                 </div>
-                <div class="product-details">
-                    <h5>Versace Gallery Silk Shirt</h5>
-                    <p>$200</p>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="/images/8.jpg" alt="Product 2">
-                </div>
-                <div class="product-details">
-                    <h5>Versace Pop Jewels T-Shirt</h5>
-                    <p>$120</p>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="/images/7.jpg" alt="Product 3">
-                </div>
-                <div class="product-details">
-                    <h5>Versace Gallery Hoodie</h5>
-                    <p>$250</p>
-                </div>
-            </div>
+            }
         </div>
     </div>
 </section>

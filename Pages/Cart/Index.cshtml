@@ -1,54 +1,64 @@
 ﻿@page
-@model ECommerceWebApp.Pages.Cart.Pages_Cart_Index
+@model SellerAutomationSystem.Pages.Cart.IndexModel
 @{
-    ViewData["Title"] = "Shopping Cart";
+    ViewData["Title"] = "Your Cart";
 }
 
-<div class="container cart-container">
-    <!-- Cart Header -->
+<div class="cart-container">
     <div class="cart-header">
-        <h1>Your Shopping Cart</h1>
-        <p>Review your selected items and proceed to checkout.</p>
+        <h1>Your Cart</h1>
+        <p>Review the items in your cart before proceeding to checkout.</p>
     </div>
 
-    <!-- Cart Items -->
-    <div class="cart-items">
-        <!-- Item 1 -->
-        <div class="cart-item">
-            <img src="/images/12.jpg" alt="Product 1">
-            <div class="cart-item-details">
-                <h5>Product 1</h5>
-                <p>Price: $50.00</p>
-                <p>Quantity: 2</p>
-            </div>
-            <div class="cart-item-actions">
-                <button class="btn btn-remove">Remove</button>
-                <button class="btn btn-update">Update</button>
-            </div>
+    @if (Model.CartItems == null || !Model.CartItems.Any())
+    {
+        <p>Your cart is empty. Start shopping now!</p>
+    }
+    else
+    {
+        <!-- Sepet Öğeleri -->
+        <div class="cart-items">
+            @foreach (var item in Model.CartItems)
+            {
+                <div class="cart-item">
+                    <!-- Ürün Görseli -->
+                    <img src="@item.Product.ImageUrl" alt="@item.Product.Name" class="cart-item-image" />
+
+                    <!-- Ürün Detayları -->
+                    <div class="cart-item-details">
+                        <h5>@item.Product.Name</h5>
+                        <p>Price: $@item.Price</p>
+                        <p>Quantity: @item.Quantity</p>
+                        <p>Total: $@(item.Quantity * item.Price)</p>
+                    </div>
+
+                    <!-- Sepet Eylemleri -->
+                    <div class="cart-item-actions">
+                        <!-- Ürün Miktarını Güncelle -->
+                        <form method="post" asp-page-handler="Update">
+                            <input type="hidden" name="cartItemId" value="@item.Id" />
+                            <input type="number" name="quantity" value="@item.Quantity" min="1" class="form-control" style="width: 80px;" />
+                            <button type="submit" class="btn btn-primary">Update</button>
+                        </form>
+
+                        <!-- Ürünü Sepetten Kaldır -->
+                        <form method="post" asp-page-handler="Remove">
+                            <input type="hidden" name="cartItemId" value="@item.Id" />
+                            <button type="submit" class="btn btn-danger">Remove</button>
+                        </form>
+                    </div>
+                </div>
+            }
         </div>
 
-        <!-- Item 2 -->
-        <div class="cart-item">
-            <img src="/images/7.jpg" alt="Product 2">
-            <div class="cart-item-details">
-                <h5>Product 2</h5>
-                <p>Price: $75.00</p>
-                <p>Quantity: 1</p>
-            </div>
-            <div class="cart-item-actions">
-                <button class="btn btn-remove">Remove</button>
-                <button class="btn btn-update">Update</button>
-            </div>
+        <!-- Sepet Toplamı -->
+        <div class="cart-total">
+            <h3>Total Price: $@Model.TotalPrice</h3>
         </div>
-    </div>
 
-    <!-- Cart Total -->
-    <div class="cart-total">
-        Total: $175.00
-    </div>
-
-    <!-- Checkout Button -->
-    <div class="cart-checkout">
-        <a href="/Cart/Checkout" class="btn btn-primary">Proceed to Checkout</a>
-    </div>
+        <!-- Ödeme İşlemi -->
+        <div class="cart-checkout">
+            <a href="/Checkout" class="btn btn-success">Proceed to Checkout</a>
+        </div>
+    }
 </div>

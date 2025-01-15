@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using SellerAutomationSystem.Data; // DbContext için
@@ -11,6 +12,23 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 // DbContext ekleniyor
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(connectionString));
+
+
+// Cookie tabanlý kimlik doðrulama ekleyin
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Account/Login"; // Giriþ sayfasý
+        options.LogoutPath = "/Account/Logout"; // Çýkýþ sayfasý
+        options.AccessDeniedPath = "/Account/AccessDenied"; // Eriþim reddedildi sayfasý
+        options.Cookie.HttpOnly = true;
+        options.ExpireTimeSpan = TimeSpan.FromDays(14); // Çerez geçerlilik süresi
+        options.SlidingExpiration = true;
+    });
+
+
+
+builder.Services.AddAuthorization();
 
 // Razor Pages ekleniyor
 builder.Services.AddRazorPages();
@@ -35,7 +53,8 @@ app.UseRouting();
 
 
 // Razor Pages rotalarý
-
+app.UseAuthentication();
+app.UseAuthorization();
 app.MapRazorPages();
 
 app.MapGet("/", context =>
