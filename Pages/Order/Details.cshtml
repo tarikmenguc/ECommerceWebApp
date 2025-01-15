@@ -1,55 +1,38 @@
-﻿@page
-@model ECommerceWebApp.Pages.Order.Pages_Order_Details
+﻿@page "{orderId:int}"
+@model SellerAutomationSystem.Pages.Order.DetailsModel
 @{
     ViewData["Title"] = "Order Details";
 }
 
-<div class="container py-5">
-    <!-- Order Details Header -->
-    <div class="card shadow-sm mb-4">
-        <div class="card-body">
-            <h1 class="card-title text-center mb-4">Order Details</h1>
-            <p><strong>Order ID:</strong> 12345</p>
-            <p><strong>Date:</strong> 01/14/2025</p>
-            <p><strong>Total:</strong> $150.00</p>
-            <p><strong>Status:</strong> <span class="badge bg-success">Delivered</span></p>
-        </div>
-    </div>
+<div class="order-details-container">
+    <h1>Order Details</h1>
 
-    <!-- Product List -->
-    <div class="card shadow-sm">
-        <div class="card-body">
-            <h2 class="card-title mb-4">Products in this Order</h2>
-            <div class="row g-4">
-                <!-- Product Item 1 -->
-                <div class="col-md-6">
-                    <div class="card h-100">
-                        <img src="/images/9.jpg" class="card-img-top" alt="Product 1">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Product 1</h5>
-                            <p class="card-text"><strong>Price:</strong> $50.00</p>
-                            <p class="card-text"><strong>Quantity:</strong> 1</p>
-                        </div>
-                    </div>
-                </div>
+    <h3>Order Number: @Model.Order.Id</h3>
+    <p><strong>Date:</strong> @Model.Order.OrderDate.ToString("dd/MM/yyyy")</p>
+    <p><strong>Shipping Address:</strong> @Model.Order.ShippingAddress</p>
+    <p><strong>Status:</strong> @Model.Order.Status</p>
+    <p><strong>Total Price:</strong> $@Model.Order.TotalPrice</p>
 
-                <!-- Product Item 2 -->
-                <div class="col-md-6">
-                    <div class="card h-100">
-                        <img src="/images/8.jpg" class="card-img-top" alt="Product 2">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Product 2</h5>
-                            <p class="card-text"><strong>Price:</strong> $100.50</p>
-                            <p class="card-text"><strong>Quantity:</strong> 1</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Back Button -->
-    <div class="text-center mt-4">
-        <a href="/Order/Index" class="btn btn-primary">Back to Orders</a>
-    </div>
+    <h4>Items:</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.OrderItems)
+            {
+                <tr>
+                    <td>@item.Product.Name</td>
+                    <td>@item.Quantity</td>
+                    <td>$@item.Price</td>
+                    <td>$@(item.Quantity * item.Price)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>

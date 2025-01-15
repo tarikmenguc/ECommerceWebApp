@@ -1,4 +1,5 @@
 ﻿@page
+@model SellerAutomationSystem.Pages.Order.IndexModel
 @{
     ViewData["Title"] = "Order History";
 }
@@ -9,38 +10,39 @@
 </div>
 
 <section class="order-history">
-    <div class="order-grid">
-        <!-- Order Card 1 -->
-        <div class="order-card">
-            <div class="order-info">
-                <h4>Order #12345</h4>
-                <p><strong>Date:</strong> 01/14/2025</p>
-                <p><strong>Total:</strong> $150.00</p>
-                <p><strong>Status:</strong> <span class="status delivered">Delivered</span></p>
-            </div>
-            <div class="order-products">
-                <img src="/images/1.jpg" alt="Product 1" />
-                <img src="/images/2.jpg" alt="Product 2" />
-            </div>
-            <div class="order-actions">
-                <a href="/Order/Details/12345" class="btn-primary">View Details</a>
-            </div>
-        </div>
+    @if (Model.Orders == null || !Model.Orders.Any())
+    {
+        <p>You have not placed any orders yet. <a href="/">Start shopping now!</a></p>
+    }
+    else
+    {
+        <div class="order-grid">
+            @foreach (var order in Model.Orders)
+            {
+                <div class="order-card">
+                    <!-- Sipariş Bilgileri -->
+                    <div class="order-info">
+                        <h4>Order #@order.Id</h4>
+                        <p><strong>Date:</strong> @order.OrderDate.ToString("dd/MM/yyyy")</p>
+                        <p><strong>Total:</strong> $@order.TotalPrice</p>
+                        <p><strong>Status:</strong> <span>@order.Status</span></p>
+                        <p><strong>Shipping Address:</strong> @order.ShippingAddress</p>
+                    </div>
 
-        <!-- Order Card 2 -->
-        <div class="order-card">
-            <div class="order-info">
-                <h4>Order #12346</h4>
-                <p><strong>Date:</strong> 01/12/2025</p>
-                <p><strong>Total:</strong> $95.50</p>
-                <p><strong>Status:</strong> <span class="status shipped">Shipped</span></p>
-            </div>
-            <div class="order-products">
-                <img src="/images/3.jpg" alt="Product 3" />
-            </div>
-            <div class="order-actions">
-                <a href="/Order/Details/12346" class="btn-primary">View Details</a>
-            </div>
+                    <!-- Ürün Resimleri -->
+                    <div class="order-products">
+                        @foreach (var item in order.OrderItems.Take(3)) 
+                        {
+                            <img src="@item.Product.ImageUrl" alt="@item.Product.Name" title="@item.Product.Name" class="product-thumbnail" />
+                        }
+                    </div>
+
+                    <!-- Detaylar Butonu -->
+                    <div class="order-actions">
+                        <a asp-page="/Order/Details" asp-route-orderId="@order.Id" class="btn-primary">View Details</a>
+                    </div>
+                </div>
+            }
         </div>
-    </div>
+    }
 </section>
