@@ -1,0 +1,42 @@
+﻿@page
+@model SellerAutomationSystem.Pages.Order.CheckoutModel
+@{
+    ViewData["Title"] = "Checkout";
+}
+
+<div class="checkout-container">
+    <h1>Checkout</h1>
+    @if (Model.CartItems == null || !Model.CartItems.Any())
+    {
+        <p>Your cart is empty. <a href="/">Start shopping now!</a></p>
+    }
+    else
+    {
+        <!-- Sepet Öğeleri -->
+        <div class="checkout-items">
+            @foreach (var item in Model.CartItems)
+            {
+                <div class="checkout-item">
+                    <h5>@item.Product.Name</h5>
+                    <p>Price: $@item.Price</p>
+                    <p>Quantity: @item.Quantity</p>
+                    <p>Total: $@(item.Quantity * item.Price)</p>
+                </div>
+            }
+        </div>
+
+        <!-- Toplam Fiyat -->
+        <div class="checkout-total">
+            <h3>Total Price: $@Model.TotalPrice</h3>
+        </div>
+
+        <!-- Teslimat Adresi ve Ödeme Formu -->
+        <form method="post">
+            <div class="form-group">
+                <label for="address">Shipping Address:</label>
+                <textarea name="ShippingAddress" id="address" class="form-control" required>@Model.ShippingAddress</textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Place Order</button>
+        </form>
+    }
+</div>
