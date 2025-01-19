@@ -1,136 +1,106 @@
 
 
 ```markdown
-# ECommerceWebApp
+# 🌐 E-Commerce Web Application
 
 ## 📖 Overview
 
-Seller Automation System is a **desktop application** built using **WinForms** that provides sellers with a streamlined interface to manage their products, orders, and overall inventory effectively. This project focuses on offering essential automation tools for sellers to operate their businesses more efficiently, with plans to expand into a **web-based platform** and **WPF application** for enhanced user experiences in the future.
+This repository houses the **E-Commerce Web Application**, designed as a complete platform for **users** to browse and purchase products and for **sellers** to manage their inventories and orders. The web application provides an intuitive and dynamic interface powered by **ASP.NET Core** and integrates with the **Seller Automation System**, a WinForms desktop application.
 
-The system ensures sellers can maintain a complete overview of their products and orders while leveraging a robust database backend to store and process data.
-
----
-
-## 🚀 Features
-
-### **Product Management**
-- Add, edit, and delete products.
-- Manage product categories and brands.
-- Monitor stock levels.
-- Upload and display product images.
-- Filter products by category, brand, and user.
-
-### **Order Management**
-- Place new orders and track order statuses.
-- Manage shipping addresses and shipping statuses.
-- View detailed order items and total order costs.
-- Filter orders by status (Pending, Processing, Shipped, Delivered, Canceled).
-
-### **User Management**
-- Dynamic user-based data filtering.
-- User-specific access control to ensure sellers only manage their own data.
-- Support for multiple roles (Admin, Seller).
-
-### **Invoice and Payment Management**
-- Generate and view invoices for completed orders.
-- Track payment statuses (Pending, Completed, Failed, Refunded).
-- Support multiple payment methods (Credit Card, Cash on Delivery, etc.).
-
-### **Modern User Interface**
-- Enhanced with **MaterialSkin** and **Siticone UI Framework**.
-- Clean, intuitive, and responsive design for better usability.
-- Customizable themes for a personalized experience.
-
-### **Reporting and Analytics**
-- Generate sales and revenue reports.
-- Visualize data with **ScottPlot**.
-- Export reports for business analysis.
-
-### **Notifications**
-- Notify users of critical updates, such as low stock or pending payments.
-- Manage notifications and track read status.
-
-### **Upcoming Features**
-- Integration with **AWS S3** for file storage.
-- Migration to **AWS RDS** for database hosting.
-- Web-based application using **ASP.NET Core**.
-- Advanced authentication and authorization.
-- Real-time data synchronization.
+### Highlights:
+- **For Users**: Seamlessly browse products, manage carts, track orders, and save favorites.
+- **For Sellers**: Efficiently manage products, orders, and analytics through a dedicated dashboard.
+- **Scalable Infrastructure**: Planned integration with **AWS S3** for file storage and **AWS RDS** for databases.
 
 ---
 
-## 📸 Application Screenshots
+## 🌟 Features
 
-### Product Management Interface
-![Product Management](images/product-management.png "Product Management Interface")
+### **For Users**
+- **Product Catalog**: Search, filter, and view detailed product pages with reviews and ratings.
+- **Shopping Cart**: Add/remove items and calculate totals dynamically.
+- **Order Management**: Track current orders, view order history, and handle returns.
+- **Wishlist**: Save favorite products for later.
+- **Account Management**: Register, log in, and manage profiles securely.
 
-### Order Management Interface
-![Order Management](images/order-management.png "Order Management Interface")
+### **For Sellers**
+- **Product Management**: Add, edit, delete, and organize products.
+- **Order Management**: Monitor orders, update statuses, and generate invoices.
+- **Sales Analytics**: Access visualized reports of sales and revenue.
 
----
-
-## 🎥 Demo Video
-
-Watch the project introduction video on [YouTube](https://www.youtube.com/watch?v=video_id).
-
-Alternatively, use the embedded video below:
-
-```html
-<iframe width="560" height="315" src="https://www.youtube.com/embed/video_id" frameborder="0" allowfullscreen></iframe>
-```
-
----
-
-## 🛠️ Technologies Used
-
-### **Backend Technologies**
-- **ASP.NET Core**: Web and API development.
-- **Entity Framework Core**: ORM for database operations.
-- **ADO.NET**: Raw SQL queries and database communication.
-
-### **Frontend Technologies**
-- **WinForms**: Desktop user interface.
-- **MaterialSkin & Siticone UI Framework**: Modern design components.
-- **ScottPlot**: Advanced charting library for reports.
-
-### **Database**
-- **MSSQL** (Local for initial development).
-- Planned migration to **AWS RDS**.
-
-### **Other Tools**
-- **Docker**: Containerization for deployment.
-- **AWS S3**: Cloud storage for images and files (future).
+### **Additional Features**
+- **Secure Payments**: Multi-gateway support with payment status tracking.
+- **Responsive Design**: Optimized for desktop, tablet, and mobile users.
+- **Real-Time Updates**: Instant notifications for status changes and reviews.
+- **Cloud Integration**: AWS S3 for media storage and AWS RDS for scalability (planned).
 
 ---
 
 ## 📂 Project Structure
 
+```plaintext
+ECommerceWeb/
+├── Controllers/
+│   ├── HomeController.cs          # Handles user-facing pages
+│   ├── ProductController.cs       # Manages product-related actions
+│   ├── OrderController.cs         # Manages orders and tracking
+│   ├── AdminController.cs         # Admin dashboard for sellers
+│
+├── Models/
+│   ├── User.cs                    # User details and authentication
+│   ├── Product.cs                 # Product data with stock and pricing
+│   ├── Order.cs                   # Order and order items with relationships
+│   ├── Invoice.cs                 # Invoice details for completed orders
+│   ├── Wishlist.cs                # User's saved products
+│
+├── Views/
+│   ├── Shared/                    # Layouts and partial views
+│   ├── Home/                      # User-facing pages
+│   ├── Admin/                     # Seller dashboard views
+│   ├── Cart/                      # Shopping cart views
+│   ├── Account/                   # Login and profile management
+│
+├── wwwroot/
+│   ├── css/                       # Stylesheets
+│   ├── js/                        # JavaScript files
+│   ├── images/                    # Static assets and media
+│
+├── Data/
+│   ├── AppDbContext.cs            # Database context and configurations
+│
+├── Services/
+│   ├── ProductService.cs          # Business logic for products
+│   ├── OrderService.cs            # Business logic for orders
+│   ├── NotificationService.cs     # Handles real-time notifications
+│
+├── Tests/
+│   ├── UnitTests/                 # Unit tests for controllers and services
+│   ├── IntegrationTests/          # End-to-end integration tests
 ```
-SellerAutomationSystem/
-|-- Data/
-|   |-- AppDbContext.cs        # Database context and configurations
-|
-|-- Models/
-|   |-- User.cs                # User model with properties like UserName, Email
-|   |-- Product.cs             # Product model with details like price, stock
-|   |-- Order.cs               # Order model with relationships to OrderItems
-|   |-- ... (Other models)
-|
-|-- Repositories/
-|   |-- ProductRepository.cs   # Product-specific database operations
-|   |-- OrderRepository.cs     # Order-related database operations
-|
-|-- Services/
-|   |-- ProductService.cs      # Business logic for products
-|   |-- OrderService.cs        # Business logic for orders
-|
-|-- Forms/
-|   |-- ProductForm.cs         # UI for managing products
-|   |-- OrderForm.cs           # UI for managing orders
-|
-|-- Resources/
-|   |-- Images/                # Local images (temporary, before AWS S3 integration)
-|   |-- CSS/                   # Styling for forms and reports
+
+---
+
+## 📸 Screenshots
+
+### **Home Page**
+![Home Page](images/home-page.png "E-Commerce Home Page")
+
+### **Product Page**
+![Product Page](images/product-page.png "Detailed Product View")
+
+### **Admin Dashboard**
+![Admin Dashboard](images/admin-dashboard.png "Admin Panel for Sellers")
+
+---
+
+## 🎥 Demo Video
+
+Check out the [demo video](https://www.youtube.com/watch?v=your-video-id) showcasing the core features.
+
+Alternatively, view it directly below:
+
+```html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
 ```
 
 ---
@@ -146,63 +116,68 @@ SellerAutomationSystem/
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/seller-automation-system.git
-   cd seller-automation-system
+   git clone https://github.com/your-username/ecommerce-web.git
+   cd ecommerce-web
    ```
 
 2. **Install Dependencies**:
-   Open the solution file (`SellerAutomationSystem.sln`) in Visual Studio and restore NuGet packages.
+   Open the solution file (`ECommerceWeb.sln`) in Visual Studio and restore NuGet packages.
 
 3. **Configure the Database**:
    - Update the `appsettings.json` file with your database connection string:
      ```json
      {
        "ConnectionStrings": {
-         "DefaultConnection": "Server=.\\\\SQLEXPRESS;Database=SellerAutomation;Trusted_Connection=True;TrustServerCertificate=True;"
+         "DefaultConnection": "Server=.\\SQLEXPRESS;Database=ECommerceDB;Trusted_Connection=True;TrustServerCertificate=True;"
        }
      }
      ```
-   - Apply migrations to set up the database:
+   - Apply migrations and update the database:
      ```bash
      dotnet ef migrations add InitialCreate
      dotnet ef database update
      ```
 
 4. **Run the Application**:
-   - Press `F5` or use the \"Run\" button in Visual Studio to start the project.
+   Press `F5` or click the \"Run\" button in Visual Studio.
 
 ---
 
-## 🌟 Future Enhancements
+## 🛡️ Security Features
 
-- **WPF Desktop Application**: A modern, feature-rich alternative to WinForms.
-- **Web Application**: A comprehensive platform for customers and sellers.
-- **Mobile Application**: Native apps for managing the platform on-the-go.
-- **Multi-language Support**: Localized UI for global users.
-- **AI-powered Recommendations**: Suggest products based on user behavior.
+- Password hashing with **BCrypt**.
+- JWT-based API authentication for secure endpoints.
+- Sensitive keys managed via environment variables.
+
+---
+
+## 🌟 Planned Enhancements
+
+- **Mobile Application**: Native iOS and Android apps for users and sellers.
+- **Multi-Language Support**: Localized UI for international users.
+- **Integration with Seller Automation System**: Real-time data synchronization with the desktop app.
+- **AI-Powered Product Recommendations**: Personalized suggestions for users.
 
 ---
 
 ## 🤝 Contributing
 
-We welcome contributions! To contribute:
+We welcome contributions! To get started:
 1. Fork the repository.
 2. Create a feature branch (`git checkout -b feature-name`).
 3. Commit your changes (`git commit -m 'Add new feature'`).
-4. Push to your branch (`git push origin feature-name`).
+4. Push to the branch (`git push origin feature-name`).
 5. Open a pull request.
 
 ---
 
 ## 📧 Contact
 
-For inquiries or support, please email **your-email@example.com**.
+For inquiries, reach out via email: **tmenguc12@gmail.com**
 
 ---
 
 ## 📜 License
 
-This project is licensed under the **MIT License**. See the `LICENSE` file for more details.
+This project is licensed under the **MIT License**. See the `LICENSE` file for details.
 ```
-
-Görsel ve video ekleme kısmı dahil edilmiş ve örneklerle gösterilmiştir. İsterseniz direkt projenize entegre edebilirsiniz.
